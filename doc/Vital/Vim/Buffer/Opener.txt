@@ -1,6 +1,6 @@
-*vital-vim-buffer-opener.txt*		A buffer opening library
+*Vital/Vim/Buffer/Opener.txt*		A buffer opening library
 
-Version: 0.1.0
+Version: 0.2.0
 Author : Alisue <lambdalisue@hashnote.net>
 License: MIT license
 
