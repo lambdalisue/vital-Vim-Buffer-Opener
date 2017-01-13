@@ -9,9 +9,8 @@ License: MIT license
 CONTENTS				*Vital.Vim.Buffer.Opener-content*
 
 INTRODUCTION			|Vital.Vim.Buffer.Opener-introduction|
+USAGE				|Vital.Vim.Buffer.Opener-usage|
 INTERFACE			|Vital.Vim.Buffer.Opener-interface|
-  MODULE			|Vital.Vim.Buffer.Opener-module|
-  INSTANCE			|Vital.Vim.Buffer.Opener-instance|
 
 
 =============================================================================
@@ -56,7 +55,7 @@ buffer even the buffer is a |previewwindow|.
 INTERFACE				*Vital.Vim.Buffer.Opener-interface*
 
 			*Vital.Vim.Buffer.Opener.open()*
-.open({buffer}[, {config}])
+open({buffer}[, {config}])
 	Open a {buffer} with a mannar specified by {config}.
 	The following attributes are allowed for {config}:
 
@@ -111,6 +110,10 @@ INTERFACE				*Vital.Vim.Buffer.Opener-interface*
 	"end()"
 	A method which focus back to "focusto" buffer. It does nothing if no
 	focus back is required.
+
+			*Vital.Vim.Buffer.Opener.is_preview_openr()*
+is_preview_opener{opener})
+	Return if the {opener} is for preview window.
 
 
 =============================================================================
