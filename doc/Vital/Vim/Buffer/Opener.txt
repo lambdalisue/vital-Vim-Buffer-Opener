@@ -59,6 +59,9 @@ open({buffer}[, {config}])
 	Open a {buffer} with a mannar specified by {config}.
 	The following attributes are allowed for {config}:
 
+	"mods"
+	A command modifiers (<mods>) such as |vertical|.
+
 	"opener"
 	An opener string such as "edit" or "split". If an opener for preview
 	window (e.g. |pedit|) has specified, it removes the "group" config
