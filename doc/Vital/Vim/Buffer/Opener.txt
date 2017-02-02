@@ -1,6 +1,6 @@
 *Vital/Vim/Buffer/Opener.txt*		A buffer opening library
 
-Version: 0.3.0
+Version: 0.4.0
 Author : Alisue <lambdalisue@hashnote.net>
 License: MIT license
 
@@ -57,6 +57,8 @@ INTERFACE				*Vital.Vim.Buffer.Opener-interface*
 			*Vital.Vim.Buffer.Opener.open()*
 open({buffer}[, {config}])
 	Open a {buffer} with a mannar specified by {config}.
+	Note that when there is a swap file, user is requested to choose an
+	action and |E325|| exception will be cached and ignored.
 	The following attributes are allowed for {config}:
 
 	"mods"
