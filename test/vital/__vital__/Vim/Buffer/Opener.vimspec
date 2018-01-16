@@ -1,8 +1,10 @@
 Describe Vim.Buffer.Opener
-  Before
+  Before all
     let Opener = vital#vital#import('Vim.Buffer.Opener')
-    windo bwipeout!
-    bufdo bwipeout!
+  End
+
+  Before
+    %bwipeout!
   End
 
   Describe .open()
